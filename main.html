@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calcul la deschiderea fisurilor</title>
+    
+    </head>
+     <body>
+        <header>
+            <h1>Calcul la deschiderea fisurilor</h1>
+        </header>
+
+
+        <label for="rezistenta-beton">Rezistenta caracteristica a betonului f<sub>ck</sub>: </label>
+        <input type="number" id="rezistenta-beton" name="rezistenta-beton" required>
+        <label>Mpa</label>
+        <br>
+
+        <label for="rezistenta-otel">Rezistenta caracteristica la intindere a otelului f<sub>yk</sub>: </label>
+        <input type="number" id="rezistenta-otel" name="rezistenta-otel" required>
+        <label>Mpa</label>
+        <br>
+
+
+
+        <label for="bara-1">Diametrul barelor din primul strat &#8960;1: </label>
+        <input type="number" id="bara-1" name="bara-1" required>
+        <label>mm</label>
+        <label for="nr-bare-strat1">Numar de bare n1: </label>
+        <input type="number" id="nr-bare-strat1" name="nr-bare-strat1" required>
+        <label>Buc</label>
+        <br>
+
+       
+        <label for="bara-2">Diametrul barelor din stratul 2 &#8960;2: </label>
+        <input type="number" id="bara-2" name="bara-2">
+        <label>mm</label>
+        <label for="nr-bare-strat2">Numar de bare n2: </label>
+        <input type="number" id="nr-bare-strat2" name="nr-bare-strat2">
+        <label>Buc</label>
+        <br>
+
+        <label for="latime-sectiune">Latimea sectiunii b: </label>
+        <input type="number" id="latime-sectiune" name="latime-sectiune" required>
+        <label>mm</label>
+        <br>
+
+        <label for="inaltime-sectiune">Inalimea sectiunii h: </label>
+        <input type="number" id="inaltime-sectiune" name="inaltime-sectiune" required>
+        <label>mm</label>
+        <br>
+
+        <label for="momentul-sectiunii">Momentul de proiectare a sectiunii M: </label>
+        <input type="number" id="momentul-sectiunii" name="momentul-sectiunii" required>
+        <label>Kn*m</label>
+        <br>
+
+        <label for="aria-intinsa-armatura">Aria intinsa de armatura A<sub>s</sub>: </label>
+        <input type="number" id="aria-intinsa-armatura" name="aria-intinsa-armatura" required>
+        <label>mm&sup2;</label>
+        <br>
+
+        <label for="aria-comprimata-armatura">Aria comprimata de armatura A<sub>s2</sub>: </label>
+        <input type="number" id="aria-comprimata-armatura" name="aria-comprimata-armatura" required>
+        <label>mm&sup2;</label>
+        <br>
+
+        <label for="inaltimea-utila-sectiune">Inalimea utila a sectiunii d: </label>
+        <input type="number" id="inaltimea-utila-sectiune" name="inaltimea-utila-sectiune" required>
+        <label>mm</label>
+        <label for="inaltimea-utila-sectiune2"> d<sub>2</sub>:</label>
+        <input type="number" id="inaltimea-utila-sectiune2" name="inaltimea-utila-sectiune2" required>
+        <label>mm</label>
+        <br>
+
+        <label for="distanta-bare">Distanta maxima intre barele de armatura intinse s: </label>
+        <input type="number" id="distanta-bare" name="distanta-bare" required>
+        <label>mm</label>
+        <br>
+
+        <label for="strat-acop-beton">Stratul de acoperire cu beton c: </label>
+        <input type="number" id="strat-acop-beton" name="strat-acop-beton" required>
+        <label>mm</label>
+        <br>
+
+        <label for="modul-otel">Modulul de elasticitate al otelului E<sub>s</sub>: </label>
+        <input type="number" id="modul-otel" name="modul-otel" required>
+        <label>N/mm&sup2;</label>
+        <br>
+        
+        <label for="rezistenta-medie-beton">Rezistenta medie la compresiune a betonului f<sub>cm</sub>: </label>
+        <input type="number" id="rezistenta-medie-beton" name="rezistenta-medie-beton" required>
+        <label>Mpa</label>
+        <br>
+
+        <label for="rezistenta-intindere-beton">Rezistenta la intindere a betonului f<sub>ctk.0.05</sub>: </label>
+        <input type="number" id="rezistenta-intindere-beton" name="rezistenta-intindere-beton" required>
+        <label>Mpa</label>
+        <label for="rezistenta-intindere-beton2">f<sub>ctm</sub>: </label>
+        <input type="number" id="rezistenta-intindere-beton2" name="rezistenta-intindere-beton2" required>
+        <label>Mpa</label>
+        <br>
+
+        <label for="coeficient-aderenta">Coeficient aderenta armatura k1 : </label>
+        <input type="number" id="coeficient-aderenta" name="coeficient-aderenta" required>
+        <label for="coeficient-deformatii">Coeficient distributie deformatii k2 : </label>
+        <input type="number" id="coeficient-deformatii" name="coeficient-deformatii" required>
+        <br>
+
+        <label for="factorul-incarcare">Factorul dependent de durata de incarcare kt : </label>
+        <input type="number" id="factorul-incarcare" name="factorul-incarcare" required>
+        <br>
+
+        <button id="calcul-rezultate">Calculeaza</button>
+        <script src="script.js"></script>
+    </body>
+</html>

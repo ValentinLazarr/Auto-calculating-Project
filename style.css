@@ -1,0 +1,27 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:burlywood;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 20px; 
+    color:black;
+}
+
+input[type="number"] {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    border: 1px solid #c61a1a;
+    border-radius: 4px;
+}
